@@ -1,0 +1,12 @@
+services:
+  Bad_Name:
+    image: x
+    replicas: 20
+    tier: db
+    extra: 1
+  queue:
+    image: registry.example/queue:2.0
+    tier: worker
+    port: 9000
+  noimage:
+    tier: web

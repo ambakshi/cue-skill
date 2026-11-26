@@ -1,0 +1,11 @@
+services:
+  api:
+    image: registry.example/api:1.4
+    port: 8080
+    tier: web
+    env:
+      LOG_LEVEL: info
+  queue:
+    image: registry.example/queue:2.0
+    replicas: 3
+    tier: worker
