@@ -54,3 +54,10 @@ cue import -p pkg -l '#Def:' jsonschema: schema.json -o -   # schema in
 cue mod init example.com/name            # new module, language.version = v0.18.0
 cue mod upgrade v0.18.0                  # migrate a module and rewrite its files
 ```
+
+## Example
+
+See [references/claire.cue](references/claire.cue) for a complete example of a schema, data, and template that work
+together. It is a good starting point for your own work. Also the accompanying [references/claire.json.schema](references/claire.json.schema)
+is the json schema that was used to generate the CUE schema. It describes the shape of a Cloudflare/claire api call.
+
